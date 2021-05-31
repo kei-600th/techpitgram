@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
     # ここにpagesコントローラーのhomeアクションのルーティングを追加する
     root 'pages#home'
+    get '/users/:id', to: 'users#show', as: 'user'
 end
